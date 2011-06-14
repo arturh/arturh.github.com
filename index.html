@@ -162,6 +162,47 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.js">\x3C/script>')</script>
     <script>
+  (function(window,document,undefined){
+  var ruby=document.createElement("ruby"),
+      rt=document.createElement("rt"),     
+            rp=document.createElement("rp"),    
+      docElement=document.documentElement,
+      display="display",
+      fontSize="fontSize"; // "fontSize" - because it`s only used for IE6 and IE7
+
+  ruby.appendChild(rp);
+  ruby.appendChild(rt);
+      docElement.appendChild(ruby);
+
+           // browsers that support <ruby> hide the <rp> via "display:none"
+  if((getStyle(rp,display)=="none")                                                // for non-IE 
+     // but for IE <rp> has "display:inline" so, the test needs other conditions:
+     || (getStyle(ruby,display)=="ruby" && getStyle(rt,display)=="ruby-text")      // for IE8 & IE9
+     || (getStyle(rp,fontSize)=="6pt" && getStyle(rt,fontSize)=="6pt")){           // for IE6 & IE7  
+    addClass("ruby");
+  }else{
+    addClass("no-ruby");
+  }
+
+  function getStyle(element,styleProperty){
+    var result;
+    if (window.getComputedStyle){    // for non-IE 
+      result = document.defaultView.getComputedStyle(element,null).getPropertyValue(styleProperty);
+    }else if (element.currentStyle){ // for IE 
+      result = element.currentStyle[styleProperty];
+    }
+    return result;
+  }
+
+  function addClass(result){
+    docElement.className = result;
+  }
+
+  ruby.removeChild(rp);
+  ruby.removeChild(rt);
+  docElement.removeChild(ruby);
+
+  })(this,this.document);
     </script>
     </body>    
 </html>

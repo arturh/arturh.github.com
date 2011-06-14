@@ -9,6 +9,8 @@ URL: http://www.chris-creed.com
 
 @import "styles/reset.css";
 
+.no-ruby rt {display: none;}
+
 /* -------------------- */
 /* -- General Styles -- */
 /* -------------------- */
