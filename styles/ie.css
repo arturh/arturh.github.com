@@ -1,0 +1,9 @@
+.ie6 body { padding-top: 70px; }
+.ie6 #wrap, #header-photo { border: 1px #ddd solid; }
+.ie6 #header { margin-bottom: -15px; }
+.ie7 #wrap, #header-photo { border: 1px #ddd solid; }
+.ie7 #header { margin-bottom: -15px; }
+.ie8 #wrap { box-shadow: 0 0 45px #bbb; }
+.ie8 #wrap, #header-photo { border: 1px #ddd solid; }
+.ie8 #header-photo img { margin-bottom: 1px; }
+.ie9 #wrap { box-shadow: 0 0 45px #bbb; }

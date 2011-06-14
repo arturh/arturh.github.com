@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">	
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
 	
 	<head>		
 		
@@ -9,21 +15,14 @@
 		<link rel="stylesheet" href="style.css" />
 		
 		<!--[if IE 6]>
-            <script src="js/ie6-transparency.js"></script>
-            <script>
-                DD_belatedPNG.fix('#wrap .line, #header #header-photo');
-            </script>
-            <link rel="stylesheet" href="styles/ie6.css" />
-        <![endif]--> 
-        <!--[if IE 7]>
-            <link rel="stylesheet" href="styles/ie7.css" />
-        <![endif]--> 
-        <!--[if IE 8]>
-            <link rel="stylesheet" href="styles/ie8.css" />
-        <![endif]--> 	
-        <!--[if IE 9]>
-            <link rel="stylesheet" href="styles/ie9.css" />
-        <![endif]--> 	
+        <script src="js/ie6-transparency.js"></script>
+        <script>
+              DD_belatedPNG.fix('#wrap .line, #header #header-photo');
+        </script>
+    <![endif]--> 
+    <!--[if lt IE 10]>
+        <link rel="stylesheet" href="styles/ie.css" />
+    <![endif]--> 
 		
 	</head>
 	
