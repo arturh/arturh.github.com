@@ -9,5 +9,5 @@
   
 
 /* SITE */
-  Components: Azuka, Modernizr
+  Components: Azuka, Modernizr, subtlepatterns.com
   Software: vim
