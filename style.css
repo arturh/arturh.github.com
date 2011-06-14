@@ -12,7 +12,20 @@ URL: http://www.chris-creed.com
 /* -------------------- */
 /* -- General Styles -- */
 /* -------------------- */
-#wrap { width: 730px; margin: 70px auto; font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; color: #555; border: 1px #eee solid; padding: 70px 70px 20px 70px; -webkit-box-shadow: 0px 0 50px #aaa; -moz-box-shadow: 0px 0 30px #aaa; box-shadow: 0px 0 50px #aaa; background: #fff; background: -moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(2%,#FFFFFF)); }
+#wrap {
+  width: 730px;
+  margin: 70px auto;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif; color: #555;
+  border: 1px #eee solid;
+  padding: 70px 70px 20px 70px;
+  -webkit-box-shadow: 0px 0 50px #aaa;
+  -moz-box-shadow: 0px 0 30px #aaa;
+  box-shadow: 0px 0 50px #aaa;
+  background: #fff;
+  background: -moz-linear-gradient(top, #EEEEEE 0%, #FFFFFF 2%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EEEEEE), color-stop(2%,#FFFFFF));
+  background: url(images/exclusive_paper.png);
+}
 body { font-family: times, serif; background-color: #eee; }
 h1 { font-size: 40px; margin: 0 0 30px 0; letter-spacing: -1px; }
 h2 { font-size: 34px; margin: 0 0 20px 0; }
