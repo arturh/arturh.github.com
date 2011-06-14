@@ -1,0 +1,13 @@
+/* TEAM */
+  Chef: Artur Honzawa
+  Contact: arturh@gmail.com
+  Twitter: @_arturh
+  From: Barcelona, Europe
+  Random youtube video: http://www.youtube.com/watch?v=WGoi1MSGu64
+
+/* THANKS */
+  
+
+/* SITE */
+  Components: Azuka, Modernizr
+  Software: vim
