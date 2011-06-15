@@ -217,6 +217,12 @@
   div.remove();
   if (any_non_renderable) { $(".symbol").hide(); }
 })();
+(function(){
+  var tops = $("rt").map(function(){return $(this).offset().top; });
+  if(tops[0] !=== tops[tops.length]){
+    $("rt").hide();
+  }
+})();
 </script>
     </body>    
 </html>
