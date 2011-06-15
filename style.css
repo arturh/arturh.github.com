@@ -37,8 +37,11 @@ h3 { font-size: 24px; margin: 30px 0 20px 0; }
 h4 { font-size: 20px; margin: 30px 0 15px 0;}
 h5 { font-size: 18px; margin: 30px 0 5px 0;}
 p { font-size: 18px; line-height: 22px; margin: 0 0 15px 0; }
+
 a { text-decoration: none; color: #0b8bbb; }
 a:hover { color: #0b8bbb; }
+.touch a { font-size: 44px; }
+
 .line { clear: both; border-bottom: 2px #eee solid; }
 
 /* ------------ */
