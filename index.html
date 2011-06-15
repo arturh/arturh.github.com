@@ -218,7 +218,8 @@
   if (any_non_renderable) { $(".symbol").hide(); }
 })();
 (function(){
-  var tops = $("rt").map(function(){return $(this).offset().top; });
+  var tops = $("rt").toArray().map(function(el){return $(el).offset().top; });
+  alert(tops);
   if(tops[0] !=== tops[tops.length]){
     $("rt").hide();
   }
