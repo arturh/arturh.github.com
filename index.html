@@ -40,10 +40,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     
                     <div id="contact-details">                                        
-            <p class="contact"><span>&#x2706; phone </span><a rel="me" href="tel:+34666134212"                   >+34 666 134 212</a></p>
-            <p class="contact"><span>&#x2709; e-mail </span><a   rel="me" href="mailto:arturh%25github@gmail.com">arturh@gmail.com</a></p>
-            <p class="contact"><span>&#x270D; twitter </span><a rel="me" href="http://twitter.com/_arturh"                >@_arturh</a></p>
-            <p class="contact"><span>&#x2328; github </span ><a rel="me" href="http://github.com/arturh"                  >github.com/arturh</a></p>
+            <p class="contact"><span class="symbol">&#x2706; </span><span>phone </span><a rel="me" href="tel:+34666134212"                   >+34 666 134 212</a></p>
+            <p class="contact"><span class="symbol">&#x2709; </span><span>e-mail </span><a   rel="me" href="mailto:arturh%25github@gmail.com">arturh@gmail.com</a></p>
+            <p class="contact"><span class="symbol">&#x270D; </span><span>twitter </span><a rel="me" href="http://twitter.com/_arturh"                >@_arturh</a></p>
+            <p class="contact"><span class="symbol">&beta; </span><span>github </span ><a rel="me" href="http://github.com/arturh"                  >github.com/arturh</a></p>
                     </div>    
                                     
                 </div><!--end header-content-->
@@ -206,5 +206,17 @@
 
   })(this,this.document);
     </script>
+<script>
+(function(){
+  "use strict";
+  var div = $('<p class="contact" style="">').appendTo("body"),
+      width = function(c){ return $("<span>").html(c).appendTo(div).width(); },
+      non_renderable_width = width("&#xfffd;"),
+      chars = "&beta; &#x270D; &#x2709; &#x2706;".split(" "),
+      any_non_renderable = chars.some(function(c){ return width(c) === non_renderable_width; });
+  div.remove();
+  if (any_non_renderable) { $(".symbol").hide(); }
+})();
+</script>
     </body>    
 </html>

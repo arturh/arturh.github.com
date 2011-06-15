@@ -52,7 +52,8 @@ header #header-content h2 { color: #0b8bbb; font-size: 28px; }
 header #header-content p { font-size: 15px; margin: 0 0 0 1px; }
 header #contact-details { float: left; margin: 18px 0 0 0; }
 header #header-content .contact { font-size: 16px; color: #888; margin: 0; }
-header #header-content .contact span { color: #444; width: 75px; float: left; } 
+header #header-content .contact span { color: #444; width: 70px; float: left; } 
+header #header-content .contact span.symbol { width: 25px; text-align:center; } 
 header #header-content .contact a {  } 
 header #header-photo { float: right;  background-color: #eee;  padding: 5px 5px 2px 5px; -webkit-box-shadow: 0px 0 10px #aaa; -moz-box-shadow: 0px 0 10px #aaa; box-shadow: 0px 0 10px #aaa; }
 .no-touch header #header-photo { background: url(./arturh2.vcf.png);
