@@ -3,30 +3,32 @@
 <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js"></script>
-<script src="inflection.js" type="text/javascript" charset="utf-8"></script>
-<script src="marelle.js" type="text/javascript" charset="utf-8"></script>
+<script src="foursquare-js-api-0.1.5.js" type="text/javascript" charset="utf-8"></script>
 
 
 <script>
 "use strict";
-var FSQUARE_CLIENT_ID="NMZKOEEJZTJOAORQ4GXZZW5GUMBUDGSTYZH3BZKGNV0INLUV";
 
-$.Marelle( "NMZKOEEJZTJOAORQ4GXZZW5GUMBUDGSTYZH3BZKGNV0INLUV" )
-.done( function( M ){
+var client = new FourSquareClient(
+  "NMZKOEEJZTJOAORQ4GXZZW5GUMBUDGSTYZH3BZKGNV0INLUV",
+  "MH5YVQ4G0AJHUG1JZIMM04DFEHKYHVSYN4HPJHPAHJDMSTGB"/* ,
+  "<redirect_uri*>" */
+);
 
-  console.log("done");
-  M.authenticateVisitor()
-    .then(function(){
-      visitor.getVenues().then(
-        function() {console.log("qqqq")},
-        function() {console.log("wwww")}
-      );
-    },
-    function(){ console.log("eee"); })
-  
+client.venuesClient.venues({
+       onSuccess: function(response)
+       {
+            
+console.log("  // do something with the response  ");
+       },
+       onFailure: function(response)
+       {
+console.log("            // the request failed ");
 
-})
-.fail(function(){ consoloe.log('Marelle could not be loaded.') });
+       }
+},
+"9899146");
+
 </script>
 </body>
 </html>
