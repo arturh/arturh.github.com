@@ -16,7 +16,7 @@ $.Marelle( FSQUARE_CLIENT_ID )
 
   console.log("done");
   M.authenticateVisitor()
-    then(function(){
+    .then(function(){
       visitor.getVenues().then(
         function() {console.log("qqqq")},
         function() {console.log("wwww")}
