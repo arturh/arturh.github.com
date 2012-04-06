@@ -13,10 +13,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <meta name="generator" content="pandoc">
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
 
 <meta http-equiv="refresh" content="30"> 
 
-  <title></title>
+  <title>$if(title-prefix)$$title-prefix$ - $endif$$if(pagetitle)$$pagetitle$$endif$</title>
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -26,10 +32,29 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- All JavaScript at the bottom, except this Modernizr build.
+  $if(quotes)$
+  <style type="text/css">
+    q { quotes: "“" "”" "‘" "’"; }
+  </style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$if(math)$
+  $math$
+$endif$
+<!-- All JavaScript at the bottom, except this Modernizr build.
      Modernizr enables HTML5 elements & feature detects for optimal performance.
      Create your own custom Modernizr build: www.modernizr.com/download/ -->
 <script src="js/libs/modernizr-2.5.3.min.js"></script>
+$for(header-includes)$
+  $header-includes$
+$endfor$
 
 
 
@@ -38,37 +63,29 @@
 <body>
 
 
-<h1 id="artur-honzawa-本澤-由生">Artur Honzawa / 本澤 由生</h1>
-<table>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">β</td>
-<td style="text-align: left;">github</td>
-<td style="text-align: left;"><a href="http://github.com/arturh">github.com/arturh</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">✉</td>
-<td style="text-align: left;">mail</td>
-<td style="text-align: left;"><a href="mailto:arturh+github@gmail.com">arturh@gmail.com</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">☞</td>
-<td style="text-align: left;">twitter</td>
-<td style="text-align: left;"><a href="http://twitter.com/_arturh">@_arturh</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">✆</td>
-<td style="text-align: left;">phone</td>
-<td style="text-align: left;"><a href="tel:+34666134212">+34 666 134 121</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"><img src="http://mystatus.skype.com/smallicon/arturhonzawa"></td>
-<td style="text-align: left;">skype</td>
-<td style="text-align: left;"><a href="skype:arturhonzawa?call">arturhonzawa</a></td>
-</tr>
-</tbody>
-</table>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></math></p>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header>
+<h1 class="title">$title$</h1>
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+</header>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC">
+$toc$
+</nav>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
 
 
   <!-- JavaScript at the bottom for fast page loading -->

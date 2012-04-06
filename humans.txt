@@ -1,14 +1,43 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
 /* TEAM */
-  Chef: Artur Honzawa
-  Contact: arturh@gmail.com
-  Twitter: @_arturh
-  From: Barcelona, Europe
-  Random youtube video: http://www.youtube.com/watch?v=WGoi1MSGu65
-  Donations: 19Fcvu17YUPdZAQ6B9GmQ2SVfkhRFCLWrN
+  <your title>: <your name>
+  Site:
+  Twitter:
+  Location:
 
 /* THANKS */
-  
+  Names (& URL):
 
 /* SITE */
-  Components: Azuka, Modernizr, subtlepatterns.com
-  Software: vim
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software:
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:
