@@ -11,4 +11,4 @@ Artur Honzawa / 本澤 由生
 
 [skypestatus]: http://mystatus.skype.com/smallicon/arturhonzawa
 
-$$e^{i\pi}+1=0$$
+$$e^{i\tau}=1$$
